@@ -4,11 +4,13 @@ def AND(bit1, bit2):
         return True
     return False
 
+
 def OR(bit1, bit2):
     [bit1, bit2] = digitize(bit1, bit2)
     if bit1 or bit2:
         return True
     return False
+
 
 def NOT(bit1):
     if bit1 == 1 or bit1 == "1":
@@ -17,17 +19,20 @@ def NOT(bit1):
         bit1 = False
     return not bit1
 
+
 def NAND(bit1, bit2):
     [bit1, bit2] = digitize(bit1, bit2)
     if bit1 and bit2:
         return False
     return True
 
+
 def NOR(bit1, bit2):
     [bit1, bit2] = digitize(bit1, bit2)
     if bit1 or bit2:
         return False
     return True
+
 
 def XOR(bit1, bit2):
     [bit1, bit2] = digitize(bit1, bit2)
@@ -37,6 +42,7 @@ def XOR(bit1, bit2):
         return True
     return False
 
+
 def XNOR(bit1, bit2):
     [bit1, bit2] = digitize(bit1, bit2)
     if bit1 or bit2:
@@ -44,6 +50,7 @@ def XNOR(bit1, bit2):
             return True
         return False
     return True
+
 
 def digitize(bit1, bit2):
     if bit1 == 1 or bit1 == "1":
